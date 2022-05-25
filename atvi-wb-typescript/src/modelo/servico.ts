@@ -3,9 +3,9 @@ export default class Servico {
     public preco!: number
     public tipo!: string
     private id!: number
-    constructor(nome:string, id: number, tipo:string, preco:number){
-        this.nome = nome
+    constructor(id: number, nome:string, tipo:string, preco:number){
         this.id = id
+        this.nome = nome
         this.tipo = tipo
         this.preco = preco
     }

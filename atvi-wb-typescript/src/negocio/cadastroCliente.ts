@@ -37,8 +37,7 @@ export default class CadastroCliente extends Cadastro {
         let ddd = this.entrada.receberTexto(`Por favor informe o DDD do cliente: `)
         let tel = this.entrada.receberTexto(`Por favor informe Telefone do cliente: `)
 
-        let email = this.entrada.receberTexto(`Por favor informe seu Email: `)
-        
+        let email = this.entrada.receberTexto(`Por favor informe seu Email: `)         
         
         
         
@@ -49,6 +48,8 @@ export default class CadastroCliente extends Cadastro {
         // CPF, data de emissão
         let dataEmissao = new Date(ano, mes, dia)
         let cpf = new CPF(valor, dataEmissao);
+        console.log(dataEmissao);
+        
 
         //Telefone
         let telCompleto = new Telefone (ddd, tel)
@@ -60,5 +61,6 @@ export default class CadastroCliente extends Cadastro {
         cliente.getRgs.push(rg)
         this.clientes.push(cliente)
         console.log(`\nCadastro concluído :)\n`);
+        
     }
 }

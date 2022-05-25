@@ -6,7 +6,7 @@ export default class CadastroProduto extends Cadastro{
     private produtos: Array<Produto>
     private entrada: Entrada
     constructor(produtos: Array<Produto>){
-        super( ) //perguntar o que é isso ?
+        super( ) 
         this.produtos = produtos
         this.entrada = new Entrada()
     }
